@@ -36,5 +36,8 @@ function julianDay(date) {
 // ----------------------------
 // 2. Fundamental arguments
 // ----------------------------
-
+function getFundamentalArgs(T) {
+  const L0 = 218.3164477 + 481267.88123421 * T - 0.0015786 * T*T + T*T*T/538841 - T*T*T*T/65194000;
+  const D  = 297.8501921 + 445267.1114034 * T - 0.0018819 * T*T + T*T*T/545868 - T*T*T*T/113065000;
+  const M  = 357.5291092 + 35999.0502909 * T - 
 
