@@ -60,5 +60,16 @@ function meeusBase(args) {
   const lonMeeus = L0 + (
     6.289 * Math.sin(Mp) +
     1.274 * Math.sin(2*D - Mp) +
-    0.658 *
+    0.658 *Math.sin(2*D) +
+    0.214 * Math.sin(2*Mp) -
+    0.186 * Math.sin(M)
+  ) * RAD;
+
+  const latMeeus = (
+    5.128 * Math.sin(F) +
+    0.280 * Math.sin(Mp + F) +
+    0.277 * Math.sin(Mp - F) +
+    0.173 * Math.sin(2*D - F)
+  ) * RAD;
+
 
