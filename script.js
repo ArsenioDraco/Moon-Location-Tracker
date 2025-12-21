@@ -20,5 +20,21 @@ function julianDay(date) {
               date.getUTCHours() / 24 +
               date.getUTCMinutes() / 1440 +
               date.getUTCSeconds() / 86400;
+ if (month <= 2) {
+    month += 12;
+    year -= 1;
+  }
+  const A = Math.floor(year / 100);
+  const B = 2 - A + Math.floor(A / 4);
+
+  return (
+    Math.floor(365.25 * (year + 4716)) +
+    Math.floor(30.6001 * (month + 1)) +
+    day + B - 1524.5
+  );
+}
+// ----------------------------
+// 2. Fundamental arguments
+// ----------------------------
 
 
