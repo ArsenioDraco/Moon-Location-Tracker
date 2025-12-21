@@ -51,5 +51,14 @@ function getFundamentalArgs(T) {
     F:  F  * RAD
   };
 }
+// ----------------------------
+// 3. Meeus Base Model
+// ----------------------------
+function meeusBase(args) {
+  const {L0, D, M, Mp, F} = args;
 
+  const lonMeeus = L0 + (
+    6.289 * Math.sin(Mp) +
+    1.274 * Math.sin(2*D - Mp) +
+    0.658 *
 
