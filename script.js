@@ -80,5 +80,14 @@ function meeusBase(args) {
 
   return { lonMeeus, latMeeus, distMeeus };
 }
+// ----------------------------
+// 4. Reduced ELP Corrections (Tier‑2)
+// ----------------------------
+// These terms are taken from the trimmed-amplitude ELP2000 series.
+// They represent the dominant deltas that bring Meeus up to Tier‑2.
+//
+// FORMAT per term:
+// [ A,  dD, dM, dMp, dF, phase ]
+// arg = dD*D + dM*M + dMp*Mp + dF*F
 
 
