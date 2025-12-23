@@ -72,4 +72,13 @@ function meeusBase(args) {
     0.173 * Math.sin(2*D - F)
   ) * RAD;
 
+  const distMeeus = 385000.56 -
+    20905.0 * Math.cos(Mp) -
+    3699.0  * Math.cos(2*D - Mp) -
+    2956.0  * Math.cos(2*D) -
+    570.0   * Math.cos(2*Mp);
+
+  return { lonMeeus, latMeeus, distMeeus };
+}
+
 
