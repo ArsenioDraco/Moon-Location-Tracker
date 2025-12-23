@@ -115,6 +115,10 @@ function applyELP(args) {
       dDist = 0;
 
   for (const t of ELP_LON) {
-    const [A, dD,
+    const [A, dD,dM, dMp, dF] = t;
+    const arg = dD*D + dM*M + dMp*Mp + dF*F;
+    dLon += A * Math.sin(arg);
+  }
+
 
 
