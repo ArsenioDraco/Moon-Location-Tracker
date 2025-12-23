@@ -107,6 +107,14 @@ const ELP_DIST = [
   [ -15.0, 2, 0,-1, 0, 0],
   [ -12.0, 2, 0, 1, 0, 0]
 ];
+function applyELP(args) {
+  const {D, M, Mp, F} = args;
 
+  let dLon = 0,
+      dLat = 0,
+      dDist = 0;
+
+  for (const t of ELP_LON) {
+    const [A, dD,
 
 
