@@ -138,6 +138,9 @@ return {
 // ----------------------------
 // 5. Final Moon Position (Tier‑2 Hybrid)
 // ----------------------------
+function moonPosition(date) {
+  const JD = julianDay(date);
+  const T = (JD - 2451545.0) / 36525;
 
 
 
