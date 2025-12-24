@@ -135,6 +135,9 @@ return {
     distELP: dDist
   };
 }
+// ----------------------------
+// 5. Final Moon Position (Tier‑2 Hybrid)
+// ----------------------------
 
 
 
