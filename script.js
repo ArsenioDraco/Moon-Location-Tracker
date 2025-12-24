@@ -146,5 +146,9 @@ function moonPosition(date) {
   const base = meeusBase(args);
   const elp  = applyELP(args);
 
+  const lon = base.lonMeeus + elp.lonELP;
+  const lat = base.latMeeus + elp.latELP;
+  const dist = base.distMeeus + elp.distELP;
+
 
 
