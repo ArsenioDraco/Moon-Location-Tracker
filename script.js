@@ -129,6 +129,12 @@ function applyELP(args) {
     const arg = dD*D + dM*M + dMp*Mp + dF*F;
     dDist += A * Math.cos(arg);
   }
+return {
+    lonELP:  dLon * RAD,
+    latELP:  dLat * RAD,
+    distELP: dDist
+  };
+}
 
 
 
