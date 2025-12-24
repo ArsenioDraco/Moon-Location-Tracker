@@ -142,5 +142,9 @@ function moonPosition(date) {
   const JD = julianDay(date);
   const T = (JD - 2451545.0) / 36525;
 
+  const args = getFundamentalArgs(T);
+  const base = meeusBase(args);
+  const elp  = applyELP(args);
+
 
 
