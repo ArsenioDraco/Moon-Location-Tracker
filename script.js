@@ -119,6 +119,11 @@ function applyELP(args) {
     const arg = dD*D + dM*M + dMp*Mp + dF*F;
     dLon += A * Math.sin(arg);
   }
+ for (const t of ELP_LAT) {
+    const [A, dD, dM, dMp, dF] = t;
+    const arg = dD*D + dM*M + dMp*Mp + dF*F;
+    dLat += A * Math.sin(arg);
+  }
 
 
 
