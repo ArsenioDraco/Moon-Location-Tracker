@@ -159,6 +159,9 @@ function moonPosition(date) {
 // ----------------------------
 // 6. Live Updater
 // ----------------------------
+function updateMoon() {
+  const date = new Date();
+  const pos = moonPosition(date);
 
 
 
