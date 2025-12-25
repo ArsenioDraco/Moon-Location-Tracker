@@ -163,5 +163,12 @@ function updateMoon() {
   const date = new Date();
   const pos = moonPosition(date);
 
+  document.getElementById("moonPos").innerHTML = `
+    <strong>Date/Time (UTC):</strong> ${date.toISOString()}<br>
+    <strong>Longitude:</strong> ${pos.longitude.toFixed(5)}°<br>
+    <strong>Latitude:</strong> ${pos.latitude.toFixed(5)}°<br>
+    <strong>Distance:</strong> ${pos.distance.toFixed(2)} km
+  `;
+}
 
 
