@@ -150,5 +150,12 @@ function moonPosition(date) {
   const lat = base.latMeeus + elp.latELP;
   const dist = base.distMeeus + elp.distELP;
 
+  return {
+    longitude: lon * 180 / Math.PI,
+    latitude:  lat * 180 / Math.PI,
+    distance:  dist
+  };
+}
+
 
 
