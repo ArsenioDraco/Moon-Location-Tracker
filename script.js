@@ -156,6 +156,9 @@ function moonPosition(date) {
     distance:  dist
   };
 }
+// ----------------------------
+// 6. Live Updater
+// ----------------------------
 
 
 
