@@ -171,4 +171,6 @@ function updateMoon() {
   `;
 }
 
+setInterval(updateMoon, 1000);
+updateMoon();
 
