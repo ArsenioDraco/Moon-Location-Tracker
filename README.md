@@ -77,7 +77,7 @@ A timed update runs once per second, recalculating the Moon’s position and inj
 |---------------|-----------------------------------------------------------------|
 | `index.html`  | Minimal HTML container with an element for displaying lunar data |
 | `script.js`   | Core logic: Julian Day, Meeus model, ELP corrections, live updater |
-| `style.css`   | Minimal CSS with a somwhat moon-related theme |
+| `style.css`   | Minimal CSS with a somewhat moon-related theme |
 
 ## Intended Use
 
